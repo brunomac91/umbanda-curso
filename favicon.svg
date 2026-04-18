@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fundo roxo escuro com gradiente -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2e0f50"/>
+      <stop offset="100%" stop-color="#0d0320"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9973a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c9973a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="64" height="64" rx="13" fill="url(#bg)"/>
+
+  <!-- Brilho central suave -->
+  <ellipse cx="32" cy="32" rx="22" ry="22" fill="url(#glow)"/>
+
+  <!-- Estrela de 7 pontas preenchida em ouro — símbolo da Umbanda -->
+  <g transform="translate(32,33)">
+    <path d="
+      M0,-19
+      L3.2,-7.5 L14.5,-9.5 L7.5,-1.5
+      L14,8 L3,4.5
+      L0,16 L-3,4.5
+      L-14,8 L-7.5,-1.5
+      L-14.5,-9.5 L-3.2,-7.5 Z"
+      fill="#c9973a"
+      opacity="0.95"
+    />
+    <!-- Ponto central — chama -->
+    <circle cx="0" cy="-1" r="4.5" fill="#f5e070"/>
+    <ellipse cx="0" cy="-4.5" rx="2" ry="3" fill="#fff8d0" opacity="0.9"/>
+  </g>
+</svg>
