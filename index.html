@@ -307,26 +307,26 @@
       object-position: top center;
       mix-blend-mode: screen;
       filter: drop-shadow(0 0 50px rgba(180,130,220,.3));
-      /* Vinheta radial: funde todas as bordas sem necessitar de mask-composite */
+      /* Vinheta radial: centro mais baixo (55%) para suavizar topo da foto */
       -webkit-mask-image: radial-gradient(
-        ellipse 70% 78% at 50% 42%,
+        ellipse 70% 70% at 50% 58%,
         black 0%,
-        black 22%,
-        rgba(0,0,0,.92) 38%,
-        rgba(0,0,0,.68) 52%,
-        rgba(0,0,0,.35) 66%,
-        rgba(0,0,0,.1)  80%,
-        transparent     93%
+        black 20%,
+        rgba(0,0,0,.9)  35%,
+        rgba(0,0,0,.62) 50%,
+        rgba(0,0,0,.28) 65%,
+        rgba(0,0,0,.07) 78%,
+        transparent     90%
       );
       mask-image: radial-gradient(
-        ellipse 70% 78% at 50% 42%,
+        ellipse 70% 70% at 50% 58%,
         black 0%,
-        black 22%,
-        rgba(0,0,0,.92) 38%,
-        rgba(0,0,0,.68) 52%,
-        rgba(0,0,0,.35) 66%,
-        rgba(0,0,0,.1)  80%,
-        transparent     93%
+        black 20%,
+        rgba(0,0,0,.9)  35%,
+        rgba(0,0,0,.62) 50%,
+        rgba(0,0,0,.28) 65%,
+        rgba(0,0,0,.07) 78%,
+        transparent     90%
       );
     }
 
@@ -341,10 +341,10 @@
         linear-gradient(to left,  rgba(16,5,32,.98) 0%, rgba(16,5,32,.75) 6%,  rgba(16,5,32,.2) 16%, transparent 28%),
         /* Base — dissolve o rodapé da foto */
         linear-gradient(to top,   rgba(12,4,24,.98) 0%, rgba(12,4,24,.7)  18%, rgba(12,4,24,.2) 36%, transparent 54%),
-        /* Topo — funde com o navbar */
-        linear-gradient(to bottom,rgba(18,6,38,.8)  0%, rgba(18,6,38,.35) 10%, transparent 22%),
+        /* Topo — cobre borda superior da foto com fade bem longo */
+        linear-gradient(to bottom, rgba(16,5,32,1) 0%, rgba(16,5,32,.88) 6%, rgba(16,5,32,.55) 14%, rgba(16,5,32,.18) 24%, transparent 38%),
         /* Limite esquerdo da foto — transição texto→imagem */
-        radial-gradient(ellipse 26% 80% at 49% 52%, rgba(18,6,38,.88) 0%, rgba(18,6,38,.4) 45%, transparent 70%);
+        radial-gradient(ellipse 32% 90% at 48% 45%, rgba(16,5,32,.95) 0%, rgba(16,5,32,.55) 38%, transparent 65%);
     }
 
     /* ── LOGO — centralizado no hero ── */
