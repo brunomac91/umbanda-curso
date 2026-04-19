@@ -1230,15 +1230,8 @@
         margin: 0 auto;
         display: block;
       }
-      /* Logo menor centralizado sobre a foto */
-      .hero-logo {
-        width: 100px; height: 100px;
-        top: 66px;                  /* 58px nav + 8px */
-        left: 50%;
-        transform: translateX(-50%);
-        animation: none;           /* sem float animado no mobile */
-      }
-      .hero-logo img { width: 100px; height: 100px; }
+      /* Logo oculto no mobile — já aparece na navbar */
+      .hero-logo { display: none; }
       /* Badge flutuante abaixo da foto, antes do texto */
       .hero-badge {
         position: relative;
@@ -1316,8 +1309,6 @@
     ══════════════════════════════ */
     @media (max-width: 400px) {
       .nav-brand { display: none; }            /* só ícone no nav */
-      .hero-logo { width: 82px; height: 82px; top: 64px; }
-      .hero-logo img { width: 82px; height: 82px; }
       .hero-photo-col { height: 280px; }
       .hero-h1 { font-size: 2rem; }
       .hero-badge { padding: 9px 15px 9px 10px; gap: 10px; }
